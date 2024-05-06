@@ -12,7 +12,7 @@ void function RetryDeny()
         {
             continue
         }
-        if( GetHealthFrac( GetLocalClientPlayer() ) < GetConVarFloat( "rd_health_frac" ) && GetHealthFrac( GetLocalClientPlayer() ) <= 0.0 )
+        if( GetHealthFrac( GetLocalClientPlayer() ) < GetConVarFloat( "rd_health_frac" ))
         {
             GetLocalClientPlayer().ClientCommand( "retry" )
         }
