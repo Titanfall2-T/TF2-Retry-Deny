@@ -1,0 +1,25 @@
+{
+    "Name": "Retry Deny",
+    "Description": "Kill denial mod",
+    "Version": "1.0.0",
+    "LoadPriority": "0",
+    "ConVars": [
+        {
+            "Name": "rd_enabled",
+            "DefaultValue": "0"
+        },
+        {
+            "Name": "rd_health_frac",
+            "DefaultValue": "0.51"
+        }
+    ],
+    "Scripts": [
+        {
+            "Path": "rd.gnut",
+            "RunOn": "MP",
+            "ClientCallback": {
+                "After": "rd_Init"
+            }
+        }
+    ]
+}
