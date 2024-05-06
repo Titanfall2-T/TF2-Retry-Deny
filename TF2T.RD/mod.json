@@ -1,7 +1,7 @@
 {
     "Name": "Retry Deny",
     "Description": "Kill denial mod",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "LoadPriority": "0",
     "ConVars": [
         {
