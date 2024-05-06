@@ -10,6 +10,8 @@ Currently, the version I am posting on GitHub is the version from my laptop, whi
 
 The most current version of this mod doesn't reconnect you if you die, which is very useful as it makes the mod reconnect you only when it would be helpful. Also one thing to note : This version is glitchy in titans. 
 
+NOTE : I have tried fixing the version from my laptop, although I'm not 100% sure it'll work
+
 BIG NOTE : YES, THIS TAKES AWAY KILL CREDIT FROM ENEMY PLAYERS. THE DEFAULT VALUE FOR `rd_health_frac` (the convar that determines what the hp threashold is) IS WHAT I CONSIDER TO BE THE MOST EFFICIENT VALUE FOR THIS MOD. YOU CAN CHANGE IT IF YOU WANT THOUGH. 
 
 ## Convars and their purposes
