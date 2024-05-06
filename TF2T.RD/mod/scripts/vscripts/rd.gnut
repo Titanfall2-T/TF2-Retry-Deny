@@ -8,11 +8,11 @@ void function RetryDeny()
     while( GetMapName() != "mp_lobby" )
     {
         wait( 0.0 )
-        if( GetConVarInt( "rd_enabled" ) == 0 || IsWatchingReplay() || IsValid( GetLocalClientPlayer() ) == false )
+        if( GetConVarInt( "rd_enabled" ) == 0 || IsWatchingReplay() || IsValid( GetLocalClientPlayer() ) == false || GetLocalClientPlayer().IsTitan() )
         {
             continue
         }
-        if( GetHealthFrac( GetLocalClientPlayer() ) < GetConVarFloat( "rd_health_frac" ))
+        if( GetHealthFrac( GetLocalClientPlayer() ) < GetConVarFloat( "rd_health_frac" ) && GetHealthFrac( GetLocalClientPlayer() ) > 0.0)
         {
             GetLocalClientPlayer().ClientCommand( "retry" )
         }
